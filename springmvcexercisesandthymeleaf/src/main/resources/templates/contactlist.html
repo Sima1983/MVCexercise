@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact list View</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/index.js"></script>
+</head>
+<body>
+
+<div>
+    <h1>Contact List</h1>
+    <ul >
+        <li th:each="contactlist: ${contactlists}">
+            <p th:text="${contactlist}"></p>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
